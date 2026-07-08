@@ -113,10 +113,7 @@ def search_expenses():
         print("No expenses found.")
     else:
         ### ASKING USER FOR THE CATEGORY TO SEARCH
-        search_expense=input("Enter category to search: ") 
-        if search_expense<0 or search_expense>=len(expenses):
-            print("Invalid expense number.")
-             
+        search_expense=input("Enter category to search: ")      
         ### SEARCHING IN THE DICTIONARY
         found=False
         for expense in expenses:
